@@ -1,0 +1,476 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*Padrões*/
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    font-weight: 300;
+    font-size: 40px;
+}
+
+p{
+    line-height: 2.0em;
+   
+}
+/*Fim Padrões*/
+
+
+/*Container-Header*/
+#container-header{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 150px;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px;
+}
+
+#menu{
+  display: none
+}
+
+input{
+    display: none;
+}
+
+input:checked ~ #menu{
+    display: inline;
+}
+
+header ion-icon {
+    font-size: 64px;
+    cursor: pointer;
+}
+
+label{
+    height: max-content;
+}
+
+nav{
+    width: 10em;
+    background-color: black;
+    border-radius: 10px;
+    height: max-content;
+    cursor: pointer;
+    z-index: 1;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    padding: 1.2em;
+    list-style-type: none;
+    color: white;
+}
+
+nav a ul:hover{
+    border-radius: 10px;
+    background-color: rgb(26, 6, 6);
+    opacity: 85%;
+}
+/*Fim Container-header*/
+
+
+/*Apresentacao*/
+#apresentacao{
+    width: 57em;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+#apresentacao img{
+    width: 21em;
+    height: 20em;
+    border-radius: 100%;
+}
+
+#texto-apresentacao{
+    width: 30em;
+    /*margin: 1em 0em 1em 3.5em;*/
+}
+
+#texto-apresentacao h1{
+    font-weight: bolder;
+    font-size: 3.5em;
+    color: #565656;
+    line-height: 1.5em;
+    margin-top: 0.2em;
+  
+}
+
+#texto-apresentacao p{
+    font-weight: 300;
+    font-size: 1.5em;
+    color: #565656;
+    line-height: 1.7em;
+    margin-top: 0.5em;
+}
+/*Fim Apresentacao*/
+
+
+/*Servicos*/
+#container-servicos{
+    width: 100%;
+    background-color: #F7F7F7;
+    height: max-content;
+    text-align: center;
+}
+
+#container-servicos h2{
+    font-weight: 900;
+    padding: 2em 1em 0.3em 1em;
+    font-size: 2.2em;
+    line-height: 1em;
+    color: #3e3e3e;
+}
+
+#container-servicos p{
+    padding: 0em 1em 3.9em 1em;
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 1.0em;
+    color: #888888;
+    
+}
+
+#servicos{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5em;
+}
+
+#tipos-servicos{
+    width: 32%;
+    padding: 20px;
+    height: 20em;
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: -1px 1px 3px -3px #000000;
+    border-radius: 10px;
+}
+
+#tipos-servicos h3{
+    font-weight: 700;
+    font-size: 1.4em;
+    line-height: 1.1em;
+    color: #3e3e3e;
+    padding-bottom: 0.9em;
+}
+
+#tipos-servicos p{   
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 2.0em;
+    color: #888888;
+
+}
+#servicos #tipos-servicos ion-icon{
+    font-size: 110px;
+}
+/*Fim Servicos*/
+
+
+/*Portfólio*/
+#container-portfolio{
+    text-align: center;
+    padding: 50px 0px;
+}
+
+#container-portfolio h2{
+    font-weight: 900;
+    padding: 0.5em 1em 0.3em 1em;
+    font-size: 2.2em;
+    line-height: 1em;
+    color: #3e3e3e;
+}
+
+#container-portfolio p{
+    padding: 0em 1em 3.9em 1em;
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 1.0em;
+    color: #888888;
+}
+
+#portfolio{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    
+}
+
+#textos-portfolio{
+    width: 50%;
+    padding: 2em;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    
+}
+
+.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#portfolio img{
+    width: 40%;
+    height: 22em;
+    border-radius: 10px;
+   
+}
+
+#portfolio p{
+    text-align: justify;
+    line-height: 1.5em;
+    font-size: 1em;
+}
+
+#portfolio h2{
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+/*Fim Porrfólio*/
+
+
+/*Sobre*/
+#sobre{
+    height: max-content;
+    text-align: center;
+    background-image: url('../img/sobre.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 5em;
+}
+
+#sobre h2{
+    font-size: 2.2em;
+    font-weight: 700;
+    padding-bottom: 0.5em;
+    color: white;
+}
+
+#sobre p{
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1em;
+    font-weight: 300;
+    color: white;
+    text-align: justify;
+    text-align-last: center;
+}
+/*Fim Sobre*/
+
+
+/*Contato*/
+#contato{
+    text-align: center;
+    padding: 2em;
+}
+
+#contato h2{
+    font-size: 2.2em;
+    font-weight: 700;
+    padding-bottom: 0em;
+}
+
+#contato p{
+    font-size: 1.2em;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+#contato ion-icon{
+    margin-top: 30px;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+/*Fim Contato*/
+
+
+/*Responsividade*/
+
+@media screen and (max-width: 300px){
+
+    #container-portfolio #portfolio img{
+        width: 15em;
+        height: 10em;
+       
+    }
+}
+
+@media screen and (max-width: 1024px){
+
+    #container-header{
+        height: 5em; 
+    }
+
+    #apresentacao{
+        width: 100%;
+        flex-direction: column;
+        height: max-content;
+        margin-bottom: 1.5em;
+    
+    }
+
+    #apresentacao img{
+        width: 155px;
+        height: 155px;
+        margin: 0 auto;
+        border-radius: 50%;
+      
+    }
+
+    #texto-apresentacao{
+        width: 100%;
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    #texto-apresentacao h1{
+        font-size: 2.2em;
+        padding: 5px;
+    }
+
+    #texto-apresentacao p{
+        width: 85%;
+        font-size: 1.1em;
+        margin: 0 auto;
+    }
+
+    
+    #container-servicos p{  
+        line-height: 1.2em;
+        padding-bottom: 2em;
+    }
+
+    #servicos{
+        flex-direction: column;
+        padding-bottom: 3em;
+        height: max-content;
+    }
+
+    #tipos-servicos{
+        width: 100%;
+        height: max-content;
+        margin: 10px auto;
+    }
+
+    #container-portfolio{
+        margin: 0px;
+        padding-bottom: 0px;
+    }
+
+    #container-portfolio p{
+        padding-bottom: 1em;
+    }
+
+    #portfolio{
+        width: 100%;
+        flex-direction: column;
+        padding: 1em;
+        margin-bottom: 2em;
+    }
+
+    #portfolio img{
+        width: 18em;
+        height: 250px;
+        margin: 0 auto;
+        
+    }
+
+    #textos-portfolio{
+        width: 100%;
+        padding: 1em;
+        padding-bottom: 0px;
+        font-size: 1.1em; 
+    }
+
+    #textos-portfolio{
+        text-align-last: center;
+    }
+
+    #sobre{
+        padding: 2em;
+    }
+
+    #sobre h2{
+        font-size: 1.6em;
+    
+    }
+    #sobre p{
+        width: 80%;
+        
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1024px){
+  
+    #apresentacao img{
+        width: 285px;
+        height: 285px;
+    }
+    #tipos-servicos{
+
+        width: 25em;
+    }
+    #portfolio img{
+        width: 70%;
+    }
+
+    #tipos-servicos p{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    #container-portfolio p{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1300px){
+
+    #servicos{
+        width: 90%;
+        flex-direction: row;
+    }
+
+    #tipos-servicos{
+        width: 30%;
+    }
+
+    #tipos-servicos p{
+        width: 90%;
+    }
+
+    #portfolio img{
+        width: 50%;
+    }
+}
