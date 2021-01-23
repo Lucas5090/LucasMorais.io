@@ -220,7 +220,7 @@ label{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgba(0,0,0, 0.9)), url("/img/sobre.jpg");
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgba(0,0,0, 0.9)), url("../img/sobre.jpg");
     background-position: left;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -294,7 +294,7 @@ label{
 
 #contato{
     height: max-content;
-    background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgba(0,0,0, 0.9)), url("/img/sobre.jpg");
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgba(0,0,0, 0.9)), url("../img/sobre.jpg");
     background-position: left;
     background-repeat: no-repeat;
     background-attachment: fixed;
